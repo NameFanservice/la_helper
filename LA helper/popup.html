@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкладки</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+
+<div class="tab" id="tab-1">
+    <div class="tab-nav">
+        <button type="button" class="tab-btn tab-btn-active" data-target-id="0">Вкладка 1</button>
+        <button type="button" class="tab-btn" data-target-id="1">Вкладка 2</button>
+        <button type="button" class="tab-btn" data-target-id="2">Вкладка 3</button>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane tab-pane-show" data-id="0">
+            <h1>Получить данные через XPath</h1>
+            <form id="fetchForm">
+                <label for="url">Никнейм:</label>
+                <input type="text" id="url" name="url" required>
+
+                <button type="submit">Получить данные</button>
+            </form>
+            <div>
+                <p id="loading"></p>
+                <p id="server1"></p>
+                <div id="server1_chars">
+
+                </div>
+                <p id="server2"></p>
+                <div id="server2_chars">
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" data-id="1">coming soon..</div>
+        <div class="tab-pane" data-id="2">coming soon</div>
+    </div>
+</div>
+
+<script src="tabs.js"></script>
+<script src="gunnery.js"></script>
+
+
+</body>
+</html>

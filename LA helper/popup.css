@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 370px;
+    height: 500px;
+    background-color: darkslateblue;
+}
+
+.tab-btn-active {
+    pointer-events: none;
+    color: red;
+}
+
+.tab-pane:not(.tab-pane-show) {
+    display: none;
+}
+
+button {
+    padding: 1em 2em;
+    background-color: #137992;
+    color: #fff;
+    border: 3px solid transparent;
+    transition: 0.5s;
+}
+button:hover {
+    border-color: #feae01;
+}
